@@ -1,0 +1,75 @@
+
+<title>Webpage</title>
+
+<center>
+    <h1 class="nes-text is-success">Gameify</h1>
+    <p class="nes-text is-primary">Everything Gaming</p>
+    <br style="line-height: 250%;">
+	<section>
+		<button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-dark').showModal();">
+		  Request a new article
+		</button>
+		<dialog class="nes-dialog is-dark" id="dialog-dark">
+		  <form method="dialog">
+			<p class="title">Request a new article</p>
+			<p>Please send all requests to <span class="nes-text is-primary">beans6652@proton.me</span></p>
+			<menu class="dialog-menu">
+			  <button class="nes-btn">Close</button>
+			  <button class="nes-btn is-primary" onclick="copyText()">Copy</button>
+			</menu>
+		  </form>
+		</dialog>
+	  </section>
+    <br>
+    <br>
+    <h2>Latest Articles</h2>
+    <a href="article.html#dummy">
+        <div class="nes-container is-rounded is-dark" style="width: fit-content; max-width: fit-content; word-wrap: break-word;">
+            <h1>Example</h1>
+            <p>An example article</p>
+        </div>
+    </a>
+    <br style="line-height: 150%;">
+    <a href="article.html#dummy2">
+        <div class="nes-container is-rounded is-dark" style="width: fit-content; max-width: fit-content; word-wrap: break-word;">
+            <h1>Example 2</h1>
+            <p>Also an example article</p>
+        </div>
+    </a>
+    <br style="line-height: 550%;">
+    <h2>Find articles by game</h2>
+    <div class="nes-container is-rounded is-dark" style="width: fit-content; max-width: fit-content; word-wrap: break-word; height: 50%;" onclick="window.open('article.html#example')">
+        <h1>Example</h1>
+        <p>XYZ Software</p>
+        <div class="nes-container is-rounded is-dark" style="width: 50%; word-wrap: break-word; height: 50%; background-color: black;">
+            EXAMPLE GAME
+        </div>
+    </div>
+</center>
+<!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+    body {
+    	background-color: rgb(0, 37, 37);
+    	color: white;
+    	font-size: +200%;
+     }
+     a:hover {
+    	text-decoration: underline white;
+     }
+</style>
+<script>
+	function copyText() {
+
+/* Copy text into clipboard */
+navigator.clipboard.writeText
+	("beans6652@proton.me");
+}
+</script>
